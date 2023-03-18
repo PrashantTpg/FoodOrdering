@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { NavbarModule } from './modules/navbar/navbar.module';
 import { SidenavModule } from './modules/sidenav/sidenav.module';
-import { SidenavService } from './service/sidenav.service';
 
 const routes : Routes= [
   { path: '' , component:DashboardComponent, 
@@ -29,7 +28,6 @@ const routes : Routes= [
   ],
   exports:[
     RouterModule
-  ],
-  providers: [SidenavService],
+  ]
 })
 export class DashboardModule { }

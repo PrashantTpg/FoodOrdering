@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { SidenavService } from '../../service/sidenav.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,11 +7,4 @@ import { SidenavService } from '../../service/sidenav.service';
 })
 export class NavbarComponent {
 
-  constructor(private sideNavService : SidenavService){
-
-  }
-  
-  toggleSideNav() {     
-    this.sideNavService.toggle();
-  }
 }

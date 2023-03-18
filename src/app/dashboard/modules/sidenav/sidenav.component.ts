@@ -1,23 +1,10 @@
-import { Component, OnInit , ViewChild } from '@angular/core';
-import { MatDrawer } from '@angular/material/sidenav';
-import { SidenavService } from '../../service/sidenav.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss']
 })
-export class SidenavComponent implements OnInit {
+export class SidenavComponent {
 
-  @ViewChild('drawer') 
-  public drawer : MatDrawer;
-
-  constructor(private sideNavService : SidenavService){    
-
-  }
-  ngOnInit(){
-    this.sideNavService.sideNavToggleSubject.subscribe(()=>{
-    
-    })
-  }
 }
