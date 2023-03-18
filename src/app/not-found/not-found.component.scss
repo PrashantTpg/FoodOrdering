@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+}
+.login-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../assets/images/notFound.png);  
+  //background-size: cover;
+  background-position: center;
+}
+
+.box {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    float: left;
+    padding: 25px 25px 25px 25px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    max-width: 410px;
+  }
+  
