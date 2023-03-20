@@ -1,9 +1,9 @@
 <div class="dashboard">
     <div class="top-nav">
-        <app-navbar></app-navbar>
+        <app-navbar (open)="openNav($event)"></app-navbar>
     </div>
     <div class="side-nav">
-        <app-sidenav>
+        <app-sidenav [openNav]="isOpen">
             <router-outlet></router-outlet>
         </app-sidenav>
     </div>

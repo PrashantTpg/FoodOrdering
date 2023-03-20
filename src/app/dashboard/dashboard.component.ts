@@ -7,12 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-
-
-name :String = 'prashant';
-
+  isOpen : boolean;
 ngOnInit(){
-  console.log(this.name);
+
+}
+
+openNav($event : any):void{
+  this.isOpen  = !this.isOpen;
+  console.log("testing @Ouptut to passed value from child to parent is "+$event+" >>"+ this.isOpen);
 }
 
 }
