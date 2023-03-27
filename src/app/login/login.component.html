@@ -6,10 +6,10 @@
     <form>
       <mat-card-content>
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Username">
+          <input matInput placeholder="Username" name="userName" [(ngModel)]="userName">
         </mat-form-field>
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Password">
+          <input matInput placeholder="Password" type="password" name="password" [(ngModel)]="password">
         </mat-form-field>
       </mat-card-content>
       <button mat-raised-button color="primary" style="float: right;" (click)="loggedIn()" >LogIn</button><a routerLink="/signup">Register Here</a>

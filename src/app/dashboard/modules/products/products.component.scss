@@ -1,0 +1,14 @@
+.product-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 12px 0px 12px 12px;
+    box-sizing: border-box;
+}
+.product-item {
+    width: calc(16.6% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  

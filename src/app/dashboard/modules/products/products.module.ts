@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductsComponent } from './products.component';
 import { CustomMaterialModuleModule } from '../../../custom-material/custom-material-module.module';
 import { FormsModule } from '@angular/forms';
+import { ProductItemModule } from './product-item/product-item.module';
 
 const routes : Routes =[
   { path : '', component:ProductsComponent}
@@ -17,6 +18,7 @@ const routes : Routes =[
     CommonModule,
     CustomMaterialModuleModule,
     FormsModule,
+    ProductItemModule,
     RouterModule.forChild(routes)
   ],
   exports :[

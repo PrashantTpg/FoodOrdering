@@ -19,6 +19,9 @@ const routes : Routes =[
     CommonModule,    
     CustomMaterialModuleModule,
     FormsModule,
+  ],
+  exports : [
+    ProductItemComponent
   ]
 })
 export class ProductItemModule { }

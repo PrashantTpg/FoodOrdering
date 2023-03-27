@@ -1,12 +1,17 @@
-.example-card {
-  max-width: 300px;
-  margin: 20px;
+.quantity-form-field{
+    max-width: 100px;
 }
-
-.example-header-image {
-  background-image: url('../../../../assets/images/pizza1.jpg');
-  background-size: cover;
+.example-card{
+    min-height: 359px;
 }
-//   .quantity-form-field{
-//     width: 100px;
-//   }
+.add-item-button{
+    align-items: center;
+}
+.add-item-div{
+    width: 100%;
+    text-align: center;
+}
+.item-images{
+    min-height: 160px;
+    max-height: 160px;
+}
