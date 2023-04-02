@@ -35,6 +35,12 @@ export class ProductItemComponent {
       if(this.quantity == 0){
         this.addButtonVisibilty = true;
       }
+      this.service.cartItem.next(
+        {
+          productItem : this.productItem,
+          quantity : this.quantity
+        }
+      );
     }
 
 

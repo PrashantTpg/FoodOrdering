@@ -17,7 +17,7 @@ export class ProductsComponent implements OnInit {
   
   getProduct(){
     this.ps.getProductList().subscribe((success)=> {
-      console.log(success);
+     // console.log(success);
       this.productList = success;
     });
   }
